@@ -9,7 +9,7 @@ Created for Erenshor v0.2 (early access).
 
 This mod requires [BepInEx](https://docs.bepinex.dev/articles/user_guide/installation/index.html) which is a simple and light weight platform to support mods for Unity games, so install that in Erenshor's directory first if you haven't already! For a Steam installation, the path should look like "\Steam\steamapps\common\Erenshor\BepInEx"
 
-Grab the [latest release of BigDamage](https://github.com/cammaron/BigDamage/releases) and place it in the BepInEx/plugins folder (if it doesn't exist yet, feel free to create it)
+Grab the [latest release of BigDamage](https://github.com/cammaron/BigDamage/releases) and unzip its contents into the BepInEx/plugins folder (if it doesn't exist yet, feel free to create it)
 
 ## Overview
 
