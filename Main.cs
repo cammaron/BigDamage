@@ -53,5 +53,11 @@ namespace BigDamage
             var harmony = new Harmony(PLUGIN_GUID);
             harmony.PatchAll();
         }
+
+        protected void OnDestroy()
+        {
+            foreach (var obj in FindObjectsOfType<ScaleWithDistance>())
+                Destroy(obj);
+        }
     }
 }

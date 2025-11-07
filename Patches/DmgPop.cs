@@ -16,11 +16,15 @@ namespace BigDamage.Patches
 				scale.extraBaseScale = Main.baseSizeFactor.Value;
 			}
 
-			__instance.Num.enableVertexGradient = false;
+			var npc = _tar.GetComponent<NPC>();
+			if (npc?.NamePlate != null)
+				__instance.transform.position = npc.NamePlate.position;
+
 			Traverse.Create(__instance).Field("sideDir").SetValue(new Vector3(Random.Range(-1f, 1f), 0, 0));
 
 			if (Main.enableColourChange.Value)
             {
+				__instance.Num.enableVertexGradient = false;
 				switch (_type)
 				{
 					case GameData.DamageType.Physical:
