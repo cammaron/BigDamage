@@ -22,9 +22,9 @@ namespace BigDamage.Patches
 			CodeMatcher matcher = new CodeMatcher(instructions);
 			MethodInfo damageMe = AccessTools.Method(typeof(Character), nameof(Character.DamageMe));
 			FieldInfo getCreditDPS = AccessTools.Field(typeof(StatusEffect), nameof(StatusEffect.CreditDPS));
-            MethodInfo getStatusEffectsArray = AccessTools.PropertyGetter(typeof(Stats), "StatusEffects");
+			MethodInfo getStatusEffectsArray = AccessTools.PropertyGetter(typeof(Stats), "StatusEffects");
 
-			matcher.MatchStartForward(new CodeMatch(OpCodes.Callvirt, damageMe)).ThrowIfNotMatch("Unable to find DamageMe call in TickEffects.")
+			matcher.MatchStartForward(new CodeMatch(OpCodes.Callvirt, damageMe)).ThrowIfNotMatch("Unable to find DamageMe call in TickEffects.") // NOTE: As of 10/11/2025, no longer sure this is needed. Source code appears to pass relevant params in. But BleedDamageMe still passes null, so below still needed.
 				.MatchBack(false, new CodeMatch(OpCodes.Ldnull)).ThrowIfNotMatch("Unable to find ldnull argument insertion prior to DamageMe.")
 				.RemoveInstruction()
 				.Insert(
@@ -50,5 +50,16 @@ namespace BigDamage.Patches
 			return matcher.Instructions();
 		}
 
+	}
+
+	/* Per SpellVessel_ResolveSpell patch, override isCritical argument if the static is set */
+	[HarmonyPatch(typeof(Stats), nameof(Stats.ReduceHP))]
+	public class Stats_ReduceHP
+	{
+		public static void Prefix(Stats __instance, ref bool _isCritical)
+		{
+			if (SpellVessel_ResolveSpell.isMagicCritReady)
+				_isCritical = true;
+		}
 	}
 }
