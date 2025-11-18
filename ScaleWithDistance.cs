@@ -24,6 +24,10 @@ namespace BigDamage
 			transform.localScale = originalScale;
         }
 
+		protected void OnDisable()
+        {
+			transform.localScale = originalScale;
+        }
 		protected void Update()
         {
 			float distanceFromCamera = Vector3.Distance(transform.position, GameData.CamControl.transform.position);
