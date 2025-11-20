@@ -37,7 +37,7 @@ namespace BigDamage.Patches
 	[HarmonyPatch(typeof(DmgPop), nameof(DmgPop.LoadInfo), new[] { typeof(int), typeof(bool), typeof(GameData.DamageType), typeof(Transform) })]
     public class DmgPop_LoadInfo
     {
-		const float SIDE_FACTOR_MAX = .55f;
+		const float SIDE_FACTOR_MAX = .65f;
 		static float sideFactor = -SIDE_FACTOR_MAX;
 
 		static void Postfix(DmgPop __instance, int _dmg, bool _crit, GameData.DamageType _type, Transform _tar, ref Vector3 ___moveDir, ref Vector3 ___sideDir, ref float ___fontDel, ref float ___destSize, ref float ___dest)
@@ -60,12 +60,12 @@ namespace BigDamage.Patches
 			// which also means that depending on the relative position of the enemy you're fighting, those numbers may go "back" or forward rather than left or right.
 			// Addressing this by making their lateral movement relative to camera orientation, and also rather than a random amount of lateral movement,
 			// specifically fanning them out in a consistent arc shape so two don't overlap by chance
-			sideFactor += .2f;
-			___moveDir = (-GameData.CamControl.ActualCam.transform.right) * sideFactor + Vector3.up * .6f;
+			sideFactor += .35f;
+			___moveDir = (-GameData.CamControl.ActualCam.transform.right) * sideFactor + Vector3.up * .3f;
 			if (sideFactor >= SIDE_FACTOR_MAX * 1.1f) sideFactor = -SIDE_FACTOR_MAX;
 
 			__instance.speed = Main.startSpeed.Value;
-			__instance.Num.fontSize = 2.8f;
+			__instance.Num.fontSize = 2.4f;
 			___fontDel = 0f;
 			___destSize = __instance.Num.fontSize * Main.juicyShrinkFactor.Value;
 			___dest = 1.2f * 60f;
