@@ -1,16 +1,20 @@
 
 # BigDamage - Erenshor mod
 
+![Screenshot showing BigDamage in action](../../refs/heads/master/Demonstrations/Screenshot.png)
+![Video showing BigDamage in action](../../refs/heads/master/Demonstrations/Erenshor - BigDamage.mp4)
+\**Note: The demo screenshot/video include usage of other mods because I was lazy. BigDamage is just the damage popup numbers, NOT the enemy health bars etc. -- those are from my other mod, [Arcanism](/cammaron/Arcanism)!\**
+
 ## Compatibility
 
 Created for Erenshor v0.2 (early access).
-Depends on [GotoHell](https://github.com/cammaron/GotoHell) which is included in the release.
+Depends on [GotoHell](/cammaron/GotoHell) which is included in the release.
 
 ## Installation
 
 This mod requires [BepInEx](https://docs.bepinex.dev/articles/user_guide/installation/index.html) which is a simple and light weight platform to support mods for Unity games, so install that in Erenshor's directory first if you haven't already! For a Steam installation, the path should look like "\Steam\steamapps\common\Erenshor\BepInEx"
 
-Grab the [latest release of BigDamage](https://github.com/cammaron/BigDamage/releases) and unzip its contents into the BepInEx/plugins folder (if it doesn't exist yet, feel free to create it), including the subdirectory, so that the path to the DLLs looks like "Erenshor\BepInEx\plugins\BigDamage\BigDamage.dll"
+Grab the [latest release of BigDamage](/cammaron/BigDamage/releases) and unzip its contents into the BepInEx/plugins folder (if it doesn't exist yet, feel free to create it), including the subdirectory, so that the path to the DLLs looks like "Erenshor\BepInEx\plugins\BigDamage\BigDamage.dll"
 
 ## Overview
 
