@@ -13,7 +13,7 @@ namespace BigDamage
 	{
 		public const string PLUGIN_GUID = "com.raventhe.erenshor.BigDamage";
 		public const string PLUGIN_NAME = "BigDamage";
-		public const string PLUGIN_VERSION = "1.0.4";
+		public const string PLUGIN_VERSION = "1.0.5";
 
 		internal static ConfigEntry<float> maxDistance;
 		internal static ConfigEntry<float> baseSizeFactor;
