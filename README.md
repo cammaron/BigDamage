@@ -21,6 +21,7 @@ BigDamage does the following:
 - Just Big: It's in the name. They're easier to see.
 - Still Big, No Matter How Far: Automatically scale floating damage numbers based on distance from camera, so they won't ever be too small to read (and are generally fairly consistent)
 - Fanning: Prevents damage numbers from overlapping by fanning them out in a wider, linear arc over enemies' heads rather than a random position (so one damage popup will always show *next to* the prior one)
+- Pause: The general animation of the numbers is changed so that they stay bigger for longer and have a fixed delay before quickly disappearing
 - Colouring: (Optionally) Removes the gradient, instead opting for completely solid bold colours representin different damage types
 - Increases the range at which numbers will be shown (size aside, previously they just outright wouldn't show if you attack an enemy beyond a certain distance, which happened to be within range of spells and ranged weapons)
 - Fixes Damage over Time spells: in vanilla, floating damage numbers (and damage source attribution) didn't happen for damage ticks from DoT spells
