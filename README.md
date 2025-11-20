@@ -16,7 +16,7 @@ Depends on [GotoHell](https://github.com/cammaron/GotoHell) which is included in
 
 This mod requires [BepInEx](https://docs.bepinex.dev/articles/user_guide/installation/index.html) which is a simple and light weight platform to support mods for Unity games, so install that in Erenshor's directory first if you haven't already! For a Steam installation, the path should look like "\Steam\steamapps\common\Erenshor\BepInEx"
 
-Grab the [latest release of BigDamage](/cammaron/BigDamage/releases) and unzip its contents into the BepInEx/plugins folder (if it doesn't exist yet, feel free to create it), including the subdirectory, so that the path to the DLLs looks like "Erenshor\BepInEx\plugins\BigDamage\BigDamage.dll"
+Grab the [latest release of BigDamage](https://github.com/cammaron/BigDamage/releases) and unzip its contents into the BepInEx/plugins folder (if it doesn't exist yet, feel free to create it), including the subdirectory, so that the path to the DLLs looks like "Erenshor\BepInEx\plugins\BigDamage\BigDamage.dll"
 
 ## Overview
 
