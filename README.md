@@ -1,16 +1,14 @@
 
 # BigDamage - Erenshor mod
 
-<a href="https://raw.githubusercontent.com/cammaron/BigDamage/refs/heads/master/Demonstrations/Screenshot.png" title="BigDamage in action!">
-  <img src="https://raw.githubusercontent.com/cammaron/BigDamage/refs/heads/master/Demonstrations/Screenshot.png" alt="BigDamage in action!" width="320" />
-</a>
-
-<video width="320" height="240" controls>
-  <source src="https://raw.githubusercontent.com/cammaron/BigDamage/refs/heads/master/Demonstrations/Erenshor%20-%20BigDamage.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video> 
-
-\**Note: The demo screenshot/video include usage of other mods because I was lazy. BigDamage is just the damage popup numbers, NOT the enemy health bars etc. -- those are from my other mod, [Arcanism](/cammaron/Arcanism)!\**
+<center>
+  <a href="https://raw.githubusercontent.com/cammaron/BigDamage/refs/heads/master/Demonstrations/Screenshot.png" title="BigDamage in action!">
+    <img src="https://raw.githubusercontent.com/cammaron/BigDamage/refs/heads/master/Demonstrations/Screenshot.png" alt="BigDamage in action!" width="320" />
+  </a>
+  Video available [here](https://raw.githubusercontent.com/cammaron/BigDamage/refs/heads/master/Demonstrations/Erenshor%20-%20BigDamage.mp4)
+  
+  \**Note: The demo screenshot/video include usage of other mods because I was lazy. BigDamage is just the damage popup numbers, NOT the enemy health bars etc. -- those are from my other mod, [Arcanism](/cammaron/Arcanism)!\**
+</center>
 
 ## Compatibility
 
