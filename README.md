@@ -17,11 +17,14 @@ In vanilla Erenshor, I've found the floating damage numbers extremely difficult 
 
 BigDamage does the following:
 
-- Automatically scale floating damage numbers based on distance from camera, so they won't ever be too small to read (and are generally fairly consistent)
-- Makes damage numbers larger in the first place
-- Removes the gradient, instead opting for completely solid bold colours representin different damage types
-- Increases the range at which numbers will be shown
-- Fixes an issue that prevented floating damage numbers (and damage source attribution) being applied to damage ticks from DoT spells
+- Just Big: It's in the name. They're easier to see.
+- Still Big, No Matter How Far: Automatically scale floating damage numbers based on distance from camera, so they won't ever be too small to read (and are generally fairly consistent)
+- Fanning: Prevents damage numbers from overlapping by fanning them out in a wider, linear arc over enemies' heads rather than a random position (so one damage popup will always show *next to* the prior one)
+- Colouring: (Optionally) Removes the gradient, instead opting for completely solid bold colours representin different damage types
+- Increases the range at which numbers will be shown (size aside, previously they just outright wouldn't show if you attack an enemy beyond a certain distance, which happened to be within range of spells and ranged weapons)
+- Fixes Damage over Time spells: in vanilla, floating damage numbers (and damage source attribution) didn't happen for damage ticks from DoT spells
+- Fixes spell crits: In vanilla, when spells crit, the damage popup isn't highlighted the way it's meant to be
+- Fixes inconsistent size/movement/behaviour depending on the angle the enemy is relative to you (now damage numbers are created in space relative to your camera angle rather than relative to the enemy position)
 
 The mod has a number of configurable properties if you want to adjust it further, which, as standard for BepInEx mods, will appear in a generated .cfg file at BepInEx/config the first time the mod is run with the game.
 
@@ -30,4 +33,4 @@ baseSizeFactor -- An initial multiplier to damage popup font size. Just makin' i
 distanceToDoubleSize -- Every X units of distance, the damage popup text scale is doubled. Scaling over distance is the main purpose of this mod, as damage occurring further away needs to be larger in world space to be visible.
 enableColourChange -- Attempts to increase damage readability by removing the colour gradient and choosing simple, bold colours. Set this to false if you prefer the original style.
 
-As well as options to change the damage colours for each element.
+As well as options to change the damage colours for each element, and some more fiddly config stuff for the fan positioning.
