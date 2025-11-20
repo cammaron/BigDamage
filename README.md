@@ -1,8 +1,8 @@
 
 # BigDamage - Erenshor mod
 
-![Screenshot showing BigDamage in action](../../refs/heads/master/Demonstrations/Screenshot.png)
-![Video showing BigDamage in action](../../refs/heads/master/Demonstrations/Erenshor - BigDamage.mp4)
+![Screenshot showing BigDamage in action](https://raw.githubusercontent.com/cammaron/BigDamage/refs/heads/master/Demonstrations/Screenshot.png)
+![Video showing BigDamage in action](https://raw.githubusercontent.com/cammaron/BigDamage/refs/heads/master/Demonstrations/Erenshor%20-%20BigDamage.mp4)
 \**Note: The demo screenshot/video include usage of other mods because I was lazy. BigDamage is just the damage popup numbers, NOT the enemy health bars etc. -- those are from my other mod, [Arcanism](/cammaron/Arcanism)!\**
 
 ## Compatibility
