@@ -1,14 +1,11 @@
 
 # BigDamage - Erenshor mod
-
-<center>
-  <a href="https://raw.githubusercontent.com/cammaron/BigDamage/refs/heads/master/Demonstrations/Screenshot.png" title="BigDamage in action!">
-    <img src="https://raw.githubusercontent.com/cammaron/BigDamage/refs/heads/master/Demonstrations/Screenshot.png" alt="BigDamage in action!" width="320" />
-  </a>
-  Video available [here](https://raw.githubusercontent.com/cammaron/BigDamage/refs/heads/master/Demonstrations/Erenshor%20-%20BigDamage.mp4)
-  
-  \**Note: The demo screenshot/video include usage of other mods because I was lazy. BigDamage is just the damage popup numbers, NOT the enemy health bars etc. -- those are from my other mod, [Arcanism](/cammaron/Arcanism)!\**
-</center>
+<p align="center">
+  <a href="/Demonstrations/Screenshot.png" title="BigDamage in action!" target="_blank"><img src="/Demonstrations/Screenshot.png" alt="BigDamage in action!" width="320" /></a>
+</p>
+<p align="center">Video available <a href="https://github.com/cammaron/BigDamage/raw/refs/heads/master/Demonstrations/Erenshor%20-%20BigDamage.mp4" title="Video showing BigDamage" target="_blank">here</a></p>
+<p align="center" width="320"><sub>Note: The demo screenshot/video include usage of other mods because I was lazy. BigDamage is just the damage popup numbers, NOT the enemy health bars etc. -- those are from my other mod, <a href="https://github.com/cammaron/Arcanism" title="Arcanism - Erenshor Arcanist gameplay overhaul mod" target="_blank">Arcanism</a>!
+</sub></p>
 
 ## Compatibility
 
