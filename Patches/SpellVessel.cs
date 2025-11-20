@@ -13,15 +13,12 @@ namespace BigDamage.Patches
 	public class SpellVessel_ResolveSpell
 	{
 		public static bool isMagicCritReady = false;
-
-		/*
-		 By default, GenPopup will only show a DmgPop if it's less than 20 units from the player. This patch increases that range to 55.
-		 */
+		
 		static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
 		{
 			return new CodeMatcher(instructions)
-				.MatchStartForward(new CodeInstruction(OpCodes.Ldstr, "8312964")) // checking if caster has the skill allowing spells to crit
-				.MatchStartForward(new CodeInstruction(OpCodes.Ldc_I4_1))
+				.MatchStartForward(new CodeMatch(OpCodes.Ldstr, "8312964")) // checking if caster has the skill allowing spells to crit
+				.MatchStartForward(new CodeMatch(OpCodes.Ldc_I4_1))
 				.InsertAndAdvance(new CodeInstruction(OpCodes.Ldc_I4_1))
 				.Insert(CodeInstruction.StoreField(typeof(SpellVessel_ResolveSpell), nameof(isMagicCritReady)))
 				.Instructions();

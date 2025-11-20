@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-using BepInEx;
-using HarmonyLib;
+﻿using HarmonyLib;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Reflection.Emit;
@@ -10,8 +8,6 @@ namespace BigDamage.Patches
 	[HarmonyPatch(typeof(Stats), "TickEffects")]
 	public class Stats_TickEffects
 	{
-
-
 		/*
 		This patch is to fix an issue with Stats.TickEffects not passing in the attacker parameter to DamageMe and BleedDamageMe calls.
 		Because damage number popups only spawn for the player/party members, without knowing who to credit the damage ticks to,

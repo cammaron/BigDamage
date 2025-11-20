@@ -2,6 +2,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Reflection.Emit;
+using static BigDamage.Patches._Util;
 
 namespace BigDamage.Patches
 {
@@ -16,8 +17,8 @@ namespace BigDamage.Patches
 		{
 			return new CodeMatcher(instructions)
 				.MatchStartForward(
-					CodeInstruction.Call(() => Vector3.Distance(default, default)),
-					new CodeInstruction(OpCodes.Ldc_R4, 20f)
+					Calls(() => Vector3.Distance(default, default)),
+					new CodeMatch(OpCodes.Ldc_R4, 20f)
 				)
 				.ThrowIfInvalid("Unable to find Vector3.Distance comparison for DmgPop display")
 				.Advance(1)

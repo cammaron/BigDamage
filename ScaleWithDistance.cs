@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace BigDamage
 {
@@ -37,5 +36,5 @@ namespace BigDamage
 			transform.localScale = originalScale * totalMulti;
 			if (debugLog) Main.Log.LogInfo($"ScaleWithDistance: distFromCamera {distanceFromCamera}, distScaleMulti {distanceScaleMultiplier}, totalMulti {totalMulti}, newScale {transform.localScale.x}");
 		}
-    }
+	}
 }

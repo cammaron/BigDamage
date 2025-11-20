@@ -27,12 +27,13 @@ namespace BigDamage.Patches
 
 			return true;
 		}
-		static void Postfix(DmgPop __instance, float ___dest)
+		static void Postfix(DmgPop __instance)
         {
-			if (___dest <= 0f)
+			if (!__instance.gameObject.activeSelf)
 				beginShrinkTimeByDmgPop.Remove(__instance);
 		}
 	}
+
 	[HarmonyPatch(typeof(DmgPop), nameof(DmgPop.LoadInfo), new[] { typeof(int), typeof(bool), typeof(GameData.DamageType), typeof(Transform) })]
     public class DmgPop_LoadInfo
     {
